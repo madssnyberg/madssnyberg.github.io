@@ -1,0 +1,318 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f1;
+    font-family: "Poppins", sans-serif;
+}
+
+/* NAVIGATION */
+
+li, a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+img{
+    margin-right: 10px;
+}
+
+.name{
+    margin-right: auto;
+    color: #7d8e8c;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: rgba(0, 0, 0, 0.60);
+}
+
+/* INTRO TEXT AND IMAGE */
+
+.banner{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    min-height: 90vh;
+    align-items: center;
+}
+
+.intro-text{
+    margin-bottom: 20vh;
+}
+
+.intro-text h1{
+    font-size: 44px;
+    font-weight: 500;
+    background: #57413f;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro-text p{
+    margin-top: 5px;
+    font-size: 22px;
+    color: #000;
+}
+
+.cover img{
+    height: 60vh;
+    margin: -7em 20px 50px 100px;
+}
+ 
+
+/* LOCATIONS */
+.row h1{
+    font-size: 44px;
+    font-weight: 500;
+    background: #7d8e8c;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.flex-area{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px 0 10px 0;
+}
+
+.flex-area h2{
+    font-size: 28px;
+    font-weight: 500;
+    background: #57413f;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin: 30px 0 10px 0;
+}
+
+.single-img{
+    text-align: center;
+}
+
+.single-img img{
+    max-width: 90%;
+    height: auto;
+}
+
+
+/* ABOUT US */
+
+.end{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    min-height: 70vh;
+    align-items: center;
+    margin-top: 5em;
+}
+
+.end-text{
+    margin-bottom: 20vh;
+}
+
+.end-text h1{
+    font-size: 35px;
+    font-weight: 500;
+    background: #7d8e8c;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.end-text p{
+    margin-top: 5px;
+    font-size: 22px;
+    color: black;
+}
+
+.end img{
+    margin: -7em 90px 50px 0;
+    width: 30%;
+}
+
+/* CONTACT US/INFO */
+.contact{
+    width: 60%;
+    margin: auto;
+    min-height: 90vh;
+    align-items: center;
+    text-align: center;
+    margin-top: -7em;
+}
+
+.friends h2{
+    font-size: 30px;
+    font-weight: 500;
+    background: #000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.friends h3{
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.friends p{
+    margin-top: 5px;
+    font-size: 22px;
+    color: #57413f;
+}
+
+/* FOR SMALL SCREENS (PHONES) */
+@media screen and (max-width: 1010px){
+    header{
+        text-align: right;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .introduction{
+        margin-top: 5em;
+        text-align: center;
+    }
+    .intro-text{
+        margin-bottom: 0;
+    }
+    .intro-text h1{
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+    .intro-text p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .cover img{
+        height: 40vh;
+        margin: 15px 0 10px 10px;
+    }
+    .flex-area{
+        margin: -10px 0 10px 0;
+    }
+    .button{
+        padding: 10px 0px 0px 0px;
+    }
+    .end{
+        flex-direction: column;
+        margin-top: 1em;
+    }
+    .aboutus{
+        text-align: center;
+    }
+    .end-text{
+        text-align: center;
+    }
+    .end-text h1{
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    .end-text p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .end img{
+        width: 50%;
+        margin: 15px 0 10px 10px;
+    }
+    .contact{
+        padding-top: 2em;
+    }
+    .friends p{
+        margin-top: 5px;
+        font-size: 22px;
+        color: #57413f;
+    }
+}
+
+ /* FOR SMALL SCREENS (PHONES/TABLETS) */
+@media screen and (max-width: 600px){
+    header{
+        text-align: right;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .introduction{
+        margin-top: 1em;
+        text-align: center;
+    }
+    .intro-text{
+        margin-bottom: 0;
+    }
+    .intro-text h1{
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+    .intro-text p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .cover img{
+        height: 40vh;
+        margin: 15px 0 10px 10px;
+    }
+    .flex-area{
+        margin: -10px 0 10px 0;
+    }
+    .button{
+        padding: 10px 0px 0px 0px;
+    }
+    .end{
+        flex-direction: column;
+        margin-top: 1em;
+    }
+    .aboutus{
+        text-align: center;
+    }
+    .end-text{
+        text-align: center;
+    }
+    .end-text h1{
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    .end-text p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .end img{
+        width: 50%;
+        margin: 15px 0 10px 10px;
+    }
+    .contact{
+        padding-top: 2em;
+        margin-bottom: 2em;
+    }
+    .friends p{
+        margin-top: 5px;
+        font-size: 22px;
+        color: #57413f;
+    }
+}
+
+ 
