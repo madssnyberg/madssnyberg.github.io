@@ -1,0 +1,270 @@
+/* INTRO TEXT AND IMAGE */
+.banner{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    min-height: 90vh;
+    align-items: center;
+}
+
+.intro-text{
+    margin-bottom: 20vh;
+    margin-top: -5em;
+}
+
+.intro-text h1{
+    font-size: 44px;
+    font-weight: 500;
+    background: #76312b;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease 0s;
+    
+}
+
+.intro-text p{
+    margin-top: 5px;
+    font-size: 22px;
+    color: #000;
+}
+
+.cover img{
+    width: 17vw;
+    margin: -7em 20px 50px 100px;
+}
+
+/*Contact form*/
+.contactform{
+    padding: 2% 0;
+    background: #000000;
+    -webkit-background-clip: text;
+    font-style: normal;
+    text-align: center;
+    height: auto;
+}
+.contactform h1{
+    font-size: 44px;
+    font-weight: 500;
+    background: #76312b;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease 0s;
+    padding-bottom: 1%;
+}
+.contactform h2{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 1em;
+}
+.contactform p, b, u{
+    font-size: 20px;
+    font-weight: 300;
+    background: #000000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease 0s;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+#email{
+    width: 18%;
+    height: 2.3vw;
+    border-radius: 5px/5px;
+    font-weight: 600;
+    margin: 1%;
+    border: 1px solid black;
+    letter-spacing: 1px;
+    background-color: rgb(233, 233, 233);
+
+}
+#name{
+    width: 18%;
+    height: 2.3vw;
+    font-weight: 600;
+    border-radius: 5px/5px;
+    margin: 1%;
+    border: 1px solid black;
+    letter-spacing: 1px;
+    background-color: rgb(233, 233, 233);
+}
+#subject{
+    width: 18%;
+    height: 2.3vw;
+    font-weight: 600;
+    border-radius: 5px/5px;
+    margin: 1%;
+    border: 1px solid black;
+    letter-spacing: 1px;
+    background-color: rgb(233, 233, 233);
+}
+#enquiry{
+    width: 18%;
+    height: 10vw;
+    font-weight: 600;
+    border-radius: 5px/5px;
+    padding: 0.4%;
+    margin: 1%;
+    border: 1px solid black;
+    letter-spacing: 1px;
+    background-color: rgb(233, 233, 233);
+}
+#send{
+    width: 10%;
+    height: auto;
+    font-weight: 300;
+    font-size: 1.75vw;
+    border-radius: 5px/5px;
+    border: 1px solid black;
+    padding: 0.4%;
+    letter-spacing: 2px;
+    background-color: rgb(233, 233, 233);
+}
+.contentsection #more{
+    -webkit-background-clip: text;
+    text-align: center;
+    padding: 5%;
+}
+.contentsection a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #000;
+}
+.contactform p{
+    -webkit-background-clip: text;
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 22px;
+}
+.end-info p{
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    text-align: center;
+    margin-bottom: 5em;
+    text-decoration: none;
+}
+.end-info h2{
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    text-align: center;
+    margin-top: 2em;
+    text-decoration: none;
+}
+.end-info a{
+    text-decoration: underline;
+    font-size: 20px;
+    color: #000;
+}
+/* FOR MEDIUM SCREENS (TABLETS) */
+@media screen and (max-width: 1055px){
+    header{
+        text-align: right;
+    }
+    .banner{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 5em;
+        min-height: 30vh;
+    }
+    .introduction{
+        text-align: center;
+    }
+    .intro-text{
+        margin-bottom: 0;
+    }
+    .intro-text h1{
+        font-size: 35px;
+        margin-bottom: 10px;
+        margin-top: 1em;
+    }
+    .intro-text p{
+        font-size: 24px;
+        line-height: 30px;
+    } 
+    .cover img{
+        height: 20vh;
+        width: auto;
+        margin: 3em 0 3em 10px;
+    }
+    #name{
+        width: 50vw;
+        height: 5vh;
+    }
+    #email{
+        width: 50vw;
+        height: 5vh;
+    }
+    #subject{
+        width: 50vw;
+        height: 5vh;
+    }
+    #enquiry{
+        width: 50vw;
+        height: 20vh;
+    }
+    #send{
+        width: 50vw;
+        height: 10vw;
+        font-size: 3.5vw;
+        margin-top: 1em;
+    }
+}
+
+/* FOR SMALL SCREENS (PHONES) */
+@media screen and (max-width: 600px){
+    header{
+        text-align: right;
+    }
+    .banner{
+        flex-direction: column;
+        min-height: 30vh;
+    }
+    .introduction{
+        text-align: center;
+    }
+    .intro-text{
+        margin-bottom: 0;
+    }
+    .intro-text h1{
+        font-size: 35px;
+        margin-bottom: 10px;
+        margin-top: 1em;
+    }
+    .intro-text p{
+        font-size: 20px;
+        line-height: 30px;
+    } 
+    .cover img{
+        height: 17vh;
+        width: auto;
+        margin: 3em 0 3em 10px;
+     }
+     #name{
+        width: 50vw;
+        height: 5vh;
+    }
+    #email{
+        width: 50vw;
+        height: 5vh;
+    }
+    #subject{
+        width: 50vw;
+        height: 5vh;
+    }
+    #enquiry{
+        width: 50vw;
+        height: 20vh;
+    }
+    #send{
+        width: 50vw;
+        height: 10vw;
+        font-size: 3.5vw;
+        margin-top: 1em;
+    }
+}

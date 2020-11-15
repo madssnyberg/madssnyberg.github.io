@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+
+/* NAVIGATION */
+
+.nav_links li, a {
+    font-weight: 500;
+    font-size: 18px;
+    color: #76312b;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 9%;
+}
+
+img{
+    margin-right: auto;
+    width: 10%;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: rgba(0, 0, 0, 0.60);
+}
+
+/*Scroll down function*/
+.scroll{
+    position: absolute;
+    bottom: 3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.arrow span{
+     display: block;
+     width: 2rem;
+     height: 2rem;
+     border: 2px solid transparent;
+     border-right-color: black;
+     border-bottom-color: black;
+     transform: rotate(45deg);
+     animation: arrow-down 0.8s alternate infinite;
+}
+.hero p{
+    margin-bottom: -7px;
+}
+@keyframes move-wheel{
+    0%{
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+    100%{
+        opacity: 1; 
+        transform: translateY(1rem);
+    }
+}
+@keyframes arrow-down{
+    0%{opacity: 0;}
+
+    25%{opacity: 0.25;}
+
+    50%{opacity: 0.50;}
+
+    75%{opacity: 0.75;}
+
+    100%{opacity: 1;}
+}
+
+@media screen and (max-width: 600px){
+    .scroll{
+        display: none;
+    }
+    img{
+        margin-right: auto;
+        width: 100px;
+    }
+    .nav_links li, a {
+        font-size: 15px;
+    }
+    header{
+        padding: 2px 2%;
+    }
+
+    .nav_links li{
+    padding: 0px 15px;
+    }
+}
+@media screen and (max-width: 757px){
+    .nav_links li, a {
+        font-size: 15px;
+    }
+    .nav_links li{
+    padding: 0px 15px;
+    }
+}
+
+@media screen and (max-width: 1055px){
+    .scroll{
+        display: none;
+    }
+    img{
+        margin-right: auto;
+        width: 100px;
+    }
+}
+

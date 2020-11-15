@@ -1,0 +1,170 @@
+/* INTRO TEXT AND IMAGE */
+.banner{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    min-height: 90vh;
+    align-items: center;
+}
+.intro-text{
+    margin-bottom: 20vh;
+    margin-top: -4em;
+}
+.intro-text h1{
+    font-size: 44px;
+    font-weight: 500;
+    background: #76312b;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease 0s;   
+}
+.intro-text p{
+    margin-top: 5px;
+    font-size: 22px;
+    color: #000;
+    
+}
+.cover img{
+    width: 20vw;
+    margin: -7em 20px 50px 100px;
+}
+.aboutus h1{
+    font-size: 40px;
+    font-weight: 500;
+    background: #76312b;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease 0s;    
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+.about_main{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+.about-text p{
+    font-size: 22px;
+    color: #000;
+}
+.president{
+    text-align: center;
+    padding: 0 0 0 70px;
+    margin-top: 2em;
+}
+.president img{
+    border-radius: 15px/15px;
+    width: 22vw;
+}
+.president p{
+    font-size: 20px;
+    margin-bottom: 2em;
+}
+/* FOR MEDIUM SCREENS (TABLETS) */
+@media screen and (max-width: 1055px){
+    header{
+        text-align: right;
+    }
+    .banner{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 3em;
+        min-height: 80vh;
+    }
+    .introduction{
+        text-align: center;
+    }
+    .intro-text{
+        margin-bottom: 0;
+    }
+    .intro-text h1{
+        font-size: 35px;
+        margin-bottom: 10px;
+        margin-top: 1em;
+    }
+    .intro-text p{
+        font-size: 24px;
+        line-height: 30px;
+    } 
+    .cover img{
+            height: 20vh;
+            width: auto;
+            margin: 3em 0 3em 10px;
+     }
+     .about_main{
+        flex-direction: column;
+        text-align: center;
+    }
+    .about p{
+        font-size: 22px;
+        color: #000;
+        line-height: 30px;
+    }
+    .president{
+        width: 100%;
+        margin-right: 70px;
+        margin-bottom: 3em;
+    }
+    .president img{
+        width: 60%;
+        margin-bottom: 2em;
+    }
+    .president p{
+        font-size: 20px;
+        width: 100%;
+        line-height: 30px;
+    }
+}
+
+/* FOR SMALL SCREENS (PHONES) */
+@media screen and (max-width: 600px){
+    header{
+        text-align: right;
+    }
+    .banner{
+        flex-direction: column;
+        margin-top: 4em;
+        text-align: center;
+    }
+    .intro-text{
+        margin-bottom: 0;
+    }
+    .intro-text h1{
+        font-size: 35px;
+        margin-bottom: 10px;
+        margin-top: 1em;
+    }
+    .intro-text p{
+        font-size: 22px;
+        line-height: 30px;
+    } 
+    .cover img{
+        height: 20vh;
+        width: auto;
+        margin: 3em 0 5em 0;
+    }
+    .about_main{
+        flex-direction: column;
+        text-align: center;
+    }
+    .about p{
+        font-size: 22px;
+        color: #000;
+        line-height: 30px;
+    }
+    .president{
+        width: 100%;
+        margin-right: 70px;
+        margin-bottom: 3em;
+    }
+    .president img{
+        width: 100%;
+    }
+    .president p{
+        font-size: 20px;
+        width: 100%;
+        line-height: 30px;
+    }
+}
