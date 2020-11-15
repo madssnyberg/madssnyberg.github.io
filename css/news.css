@@ -129,7 +129,6 @@
             width: auto;
             margin: 3em 0 3em 10px;
      }
-
     .news{
      margin-bottom: 4em;
     }
@@ -166,5 +165,8 @@
      }
     .news{
     margin-bottom: 2em;
+    }
+    .single-img h2{
+        font-size: 25px;
     }
 }
